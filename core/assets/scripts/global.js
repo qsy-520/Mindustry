@@ -21,7 +21,7 @@ const extend = function(classType, params){
     return new JavaAdapter(classType, params)
 }
 
-const newEffect = (lifetime, renderer) => new Effects.Effect(lifetime, new Effects.EffectRenderer({render: renderer}))
+const newEffect = (lifetime, renderer) => new Effect(lifetime, renderer)
 Call = Packages.mindustry.gen.Call
 
 importPackage(Packages.mindustry.world.blocks.power)
